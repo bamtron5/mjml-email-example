@@ -1,0 +1,16 @@
+{
+  "name": "bmorrison-email",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "mjml -r index.mjml -o index.html",
+    "watch": "mjml --watch index.mjml -o index.html",
+    "validate": "mjml -r index.mjml --validate"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mjml": "^4.4.0-beta.1"
+  }
+}
