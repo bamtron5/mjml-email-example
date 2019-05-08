@@ -68,22 +68,32 @@
     }
   
         </style>
-        <style type="text/css">.vis-desktop {
-                display: none;
+        <style type="text/css">.hide-mobile {
+                display:none;
+                mso-hide:all;
+                overflow:hidden;
             }
 
-            .vis-mobile: {
-                display: block;
+            .hide {
+                display:block;
+                mso-hide:none;
+                overflow:visible;
+            } 
+
+            @media only screen and (min-width: 460px) {
+                .hide-mobile {
+                    display:block !important;
+                    mso-hide:none !important;
+                    overflow:visible;
+                } 
             }
 
             @media only screen and (min-width: 460px) {
-                .vis-mobile {
-                    display: none;
-                }
-
-                .vis-desktop {
-                    display: block;
-                }
+                .hide {
+                    display:none !important;
+                    mso-hide:all !important;
+                    overflow:hidden !important;
+                } 
             }</style>
         
       </head>
@@ -179,19 +189,39 @@
                     </tr>
                   
                     <tr>
-                      <td align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                      <td align="center" class="hide-mobile" style="font-size:0px;padding:10px 25px;padding-bottom:10px;word-break:break-word;">
                         
       <div style="font-family:Helvetica Neue;font-size:0;line-height:1;text-align:center;color:#ffffff;">
         <span style="font-size: 28px;">iPhone 7</span>
                     <span style="font-size: 35px; font-weight: bold; padding: 0 3px 0 5px;">(</span>
-                    <span style="font-size: 25px; font-family: Oswald">PRODUCT</span>
+                    <span style="font-size: 25px; font-family: Oswald, Helvetica">PRODUCT</span>
                     <span style="font-size: 35px; font-weight: bold; padding: 0 0 0 3px;">)</span>
-                    <span style="font-family: Oswald;
+                    <span style="font-family: Oswald, Helvetica;
                         font-size: 15px;
                         vertical-align: top;
                         line-height: 20px;
                         padding: 0;">
                             RED <sup style="font-size: 11px; vertical-align: top; padding: 0; line-height: 19px;">&trade;</sup>
+                    </span>
+      </div>
+    
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <td align="center" class="hide" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                        
+      <div style="font-family:Helvetica Neue;font-size:0;line-height:1;text-align:center;color:#ffffff;">
+        <span style="font-size: 24px;">iPhone 7</span>
+                    <span style="font-size: 22px; font-weight: bold; padding: 0 3px 0 5px;">(</span>
+                    <span style="font-size: 16px; font-family: Oswald, Helvetica">PRODUCT</span>
+                    <span style="font-size: 22px; font-weight: bold; padding: 0 0 0 3px;">)</span>
+                    <span style="font-family: Oswald, Helvetica;
+                        font-size: 11px;
+                        vertical-align: top;
+                        line-height: 20px;
+                        padding: 0;">
+                            RED <sup style="font-size: 11px; vertical-align: top; padding: 0; line-height: 20px;">&trade;</sup>
                     </span>
       </div>
     
@@ -228,10 +258,10 @@
                     </tr>
                   
                     <tr>
-                      <td align="left" style="font-size:0px;padding:0;word-break:break-word;">
+                      <td align="left" class="hide-mobile" style="font-size:0px;padding:0;word-break:break-word;">
                         
       <table cellpadding="0" cellspacing="0" width="100%" border="0" style="cellspacing:0;color:#000000;font-family:Helvetica Neue;font-size:13px;line-height:22px;table-layout:auto;width:100%;">
-        <tr class="vis-desktop" align="center" style="padding: 8px;">
+        <tr align="center" style="padding: 8px;">
                         <td style="text-align: right; padding-right: 20px; width: 50%;">
                             <a href="https://apple.com" style="color: #ffffff; text-decoration: none; font-weight: bold;">Learn more ></a></td>
                         <td style="text-align: left; width: 50%;">
@@ -244,16 +274,16 @@
                     </tr>
                   
                     <tr>
-                      <td align="left" style="font-size:0px;padding:0;word-break:break-word;">
+                      <td align="left" class="hide" style="font-size:0px;padding:0;word-break:break-word;">
                         
       <table cellpadding="0" cellspacing="0" width="100%" border="0" style="cellspacing:0;color:#000000;font-family:Helvetica Neue;font-size:13px;line-height:22px;table-layout:auto;width:100%;">
-        <tr class="vis-mobile" style="padding: 8px;">
+        <tr style="padding: 8px;">
                         <td align="center">
                             <a href="https://apple.com" style="color: #ffffff; text-decoration: none; font-weight: bold;">Learn more ></a>
                         </td>
                     </tr>
 
-                    <tr class="vis-mobile">
+                    <tr>
                         <td align="center">
                             <a href="https://apple.com" style="color: #ffffff; text-decoration: none; font-weight: bold;">Find an Apple Store ></a>
                         </td>

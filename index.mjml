@@ -9,29 +9,6 @@
             <mj-class name="col-header" font-weight="bold" align="center" />
         </mj-attributes>
 
-        <mj-style>
-
-            .vis-desktop {
-                display: none;
-            }
-
-            .vis-mobile: {
-                display: block;
-            }
-
-            @media only screen and (min-width: 460px) {
-                .vis-mobile {
-                    display: none;
-                }
-
-                .vis-desktop {
-                    display: block;
-                }
-            }
-
-
-        </mj-style>
-
         <mj-style inline="inline">
             .span-reset {
                 font-size: 0;
@@ -42,6 +19,36 @@
                 text-decoration: none;
                 font-weight: bold;
             }
+        </mj-style>
+         <mj-style>
+            .hide-mobile {
+                display:none;
+                mso-hide:all;
+                overflow:hidden;
+            }
+
+            .hide {
+                display:block;
+                mso-hide:none;
+                overflow:visible;
+            } 
+
+            @media only screen and (min-width: 460px) {
+                .hide-mobile {
+                    display:block !important;
+                    mso-hide:none !important;
+                    overflow:visible;
+                } 
+            }
+
+            @media only screen and (min-width: 460px) {
+                .hide {
+                    display:none !important;
+                    mso-hide:all !important;
+                    overflow:hidden !important;
+                } 
+            }
+
         </mj-style>
     </mj-head>
     <mj-body>
@@ -67,18 +74,40 @@
                     font-family="Helvetica Neue"
                     align="center"
                     color="#ffffff"
+                    padding-bottom="10px"
                     mj-class="span-reset"
+                    css-class="hide-mobile"
                 >
                     <span style="font-size: 28px;">iPhone 7</span>
                     <span style="font-size: 35px; font-weight: bold; padding: 0 3px 0 5px;">(</span>
-                    <span style="font-size: 25px; font-family: Oswald">PRODUCT</span>
+                    <span style="font-size: 25px; font-family: Oswald, Helvetica">PRODUCT</span>
                     <span style="font-size: 35px; font-weight: bold; padding: 0 0 0 3px;">)</span>
-                    <span style="font-family: Oswald;
+                    <span style="font-family: Oswald, Helvetica;
                         font-size: 15px;
                         vertical-align: top;
                         line-height: 20px;
                         padding: 0;">
                             RED <sup style="font-size: 11px; vertical-align: top; padding: 0; line-height: 19px;">&trade;</sup>
+                    </span>
+                </mj-text>
+
+                <mj-text
+                    font-family="Helvetica Neue"
+                    align="center"
+                    color="#ffffff"
+                    mj-class="span-reset"
+                    css-class="hide"
+                >
+                    <span style="font-size: 24px;">iPhone 7</span>
+                    <span style="font-size: 22px; font-weight: bold; padding: 0 3px 0 5px;">(</span>
+                    <span style="font-size: 16px; font-family: Oswald, Helvetica">PRODUCT</span>
+                    <span style="font-size: 22px; font-weight: bold; padding: 0 0 0 3px;">)</span>
+                    <span style="font-family: Oswald, Helvetica;
+                        font-size: 11px;
+                        vertical-align: top;
+                        line-height: 20px;
+                        padding: 0;">
+                            RED <sup style="font-size: 11px; vertical-align: top; padding: 0; line-height: 20px;">&trade;</sup>
                     </span>
                 </mj-text>
 
@@ -102,8 +131,8 @@
                     Buy
                 </mj-button>
 
-                <mj-table width="100%" padding="0">
-                    <tr class="vis-desktop" align="center" style="padding: 8px;">
+                <mj-table width="100%" padding="0" css-class="hide-mobile">
+                    <tr align="center" style="padding: 8px;">
                         <td style="text-align: right; padding-right: 20px; width: 50%;">
                             <a href="https://apple.com">Learn more ></a></td>
                         <td style="text-align: left; width: 50%;">
@@ -112,14 +141,14 @@
                     </tr>
                 </mj-table>
 
-                <mj-table width="100%" padding="0">
-                    <tr class="vis-mobile" style="padding: 8px;">
+                <mj-table width="100%" padding="0" css-class="hide">
+                    <tr style="padding: 8px;">
                         <td align="center">
                             <a href="https://apple.com">Learn more ></a>
                         </td>
                     </tr>
 
-                    <tr class="vis-mobile">
+                    <tr>
                         <td align="center">
                             <a href="https://apple.com">Find an Apple Store ></a>
                         </td>
