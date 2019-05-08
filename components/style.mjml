@@ -1,0 +1,41 @@
+<mj-style inline="inline">
+    .span-reset {
+        font-size: 0;
+    }
+
+    a {
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: bold;
+    }
+</mj-style>
+    <mj-style>
+    .hide-mobile {
+        display:none;
+        mso-hide:all;
+        overflow:hidden;
+    }
+
+    .hide {
+        display:block;
+        mso-hide:none;
+        overflow:visible;
+    } 
+
+    @media only screen and (min-width: 460px) {
+        .hide-mobile {
+            display:block !important;
+            mso-hide:none !important;
+            overflow:visible;
+        } 
+    }
+
+    @media only screen and (min-width: 460px) {
+        .hide {
+            display:none !important;
+            mso-hide:all !important;
+            overflow:hidden !important;
+        } 
+    }
+
+</mj-style>

@@ -9,47 +9,7 @@
             <mj-class name="col-header" font-weight="bold" align="center" />
         </mj-attributes>
 
-        <mj-style inline="inline">
-            .span-reset {
-                font-size: 0;
-            }
-
-            a {
-                color: #ffffff;
-                text-decoration: none;
-                font-weight: bold;
-            }
-        </mj-style>
-         <mj-style>
-            .hide-mobile {
-                display:none;
-                mso-hide:all;
-                overflow:hidden;
-            }
-
-            .hide {
-                display:block;
-                mso-hide:none;
-                overflow:visible;
-            } 
-
-            @media only screen and (min-width: 460px) {
-                .hide-mobile {
-                    display:block !important;
-                    mso-hide:none !important;
-                    overflow:visible;
-                } 
-            }
-
-            @media only screen and (min-width: 460px) {
-                .hide {
-                    display:none !important;
-                    mso-hide:all !important;
-                    overflow:hidden !important;
-                } 
-            }
-
-        </mj-style>
+        <mj-include path="./components/style.mjml" />
     </mj-head>
     <mj-body>
         <mj-wrapper padding="15px 10px" background-color="#ffffff">
@@ -70,7 +30,7 @@
                     Special Edition
                 </mj-button>
 
-                <mj-include path="header.mjml" />
+                <mj-include path="./components/header.mjml" />
                 
                 <mj-text color="#ffffff" line-height="15px">
                     When you buy iPhone 7 (PRODUCT)RED&trade; Special Edition, 
@@ -91,7 +51,7 @@
                     Buy
                 </mj-button>
 
-                <mj-include path="secondary-cta.mjml" />
+                <mj-include path="./components/secondary-cta.mjml" />
                 
                 <mj-image width="320px" src="https://i.imgur.com/jZG2bq5.gif" href="https://apple.com" />
             </mj-hero>
