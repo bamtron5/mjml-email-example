@@ -70,47 +70,7 @@
                     Special Edition
                 </mj-button>
 
-                <mj-text
-                    font-family="Helvetica Neue"
-                    align="center"
-                    color="#ffffff"
-                    padding-bottom="10px"
-                    mj-class="span-reset"
-                    css-class="hide-mobile"
-                >
-                    <span style="font-size: 28px;">iPhone 7</span>
-                    <span style="font-size: 35px; font-weight: bold; padding: 0 3px 0 5px;">(</span>
-                    <span style="font-size: 25px; font-family: Oswald, Helvetica">PRODUCT</span>
-                    <span style="font-size: 35px; font-weight: bold; padding: 0 0 0 3px;">)</span>
-                    <span style="font-family: Oswald, Helvetica;
-                        font-size: 15px;
-                        vertical-align: top;
-                        line-height: 20px;
-                        padding: 0;">
-                            RED <sup style="font-size: 11px; vertical-align: top; padding: 0; line-height: 19px;">&trade;</sup>
-                    </span>
-                </mj-text>
-
-                <mj-text
-                    font-family="Helvetica Neue"
-                    align="center"
-                    color="#ffffff"
-                    mj-class="span-reset"
-                    css-class="hide"
-                >
-                    <span style="font-size: 24px;">iPhone 7</span>
-                    <span style="font-size: 22px; font-weight: bold; padding: 0 3px 0 5px;">(</span>
-                    <span style="font-size: 16px; font-family: Oswald, Helvetica">PRODUCT</span>
-                    <span style="font-size: 22px; font-weight: bold; padding: 0 0 0 3px;">)</span>
-                    <span style="font-family: Oswald, Helvetica;
-                        font-size: 11px;
-                        vertical-align: top;
-                        line-height: 20px;
-                        padding: 0;">
-                            RED <sup style="font-size: 11px; vertical-align: top; padding: 0; line-height: 20px;">&trade;</sup>
-                    </span>
-                </mj-text>
-
+                <mj-include path="header.mjml" />
                 
                 <mj-text color="#ffffff" line-height="15px">
                     When you buy iPhone 7 (PRODUCT)RED&trade; Special Edition, 
@@ -131,29 +91,7 @@
                     Buy
                 </mj-button>
 
-                <mj-table width="100%" padding="0" css-class="hide-mobile">
-                    <tr align="center" style="padding: 8px;">
-                        <td style="text-align: right; padding-right: 20px; width: 50%;">
-                            <a href="https://apple.com">Learn more ></a></td>
-                        <td style="text-align: left; width: 50%;">
-                            <a href="https://apple.com">Find an Apple Store ></a>
-                        </td>
-                    </tr>
-                </mj-table>
-
-                <mj-table width="100%" padding="0" css-class="hide">
-                    <tr style="padding: 8px;">
-                        <td align="center">
-                            <a href="https://apple.com">Learn more ></a>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td align="center">
-                            <a href="https://apple.com">Find an Apple Store ></a>
-                        </td>
-                    </tr>
-                </mj-table>
+                <mj-include path="secondary-cta.mjml" />
                 
                 <mj-image width="320px" src="https://i.imgur.com/jZG2bq5.gif" href="https://apple.com" />
             </mj-hero>
